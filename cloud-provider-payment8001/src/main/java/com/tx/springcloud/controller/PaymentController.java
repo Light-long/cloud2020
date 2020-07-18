@@ -28,7 +28,7 @@ public class PaymentController {
         }
     }
 
-    @GetMapping(value = "/getPaymentById/{id}")
+    @GetMapping(value = "/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
         log.info("payment="+payment);
